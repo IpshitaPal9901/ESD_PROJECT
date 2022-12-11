@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"esd_final\startup_stm32f407xx.o"
+"esd_final\main.o"
+"esd_final\stm32f4xx_it.o"
+"esd_final\stm32f4xx_hal_msp.o"
+"esd_final\stm32f4xx_hal_tim.o"
+"esd_final\stm32f4xx_hal_tim_ex.o"
+"esd_final\stm32f4xx_hal_uart.o"
+"esd_final\stm32f4xx_hal_rcc.o"
+"esd_final\stm32f4xx_hal_rcc_ex.o"
+"esd_final\stm32f4xx_hal_flash.o"
+"esd_final\stm32f4xx_hal_flash_ex.o"
+"esd_final\stm32f4xx_hal_flash_ramfunc.o"
+"esd_final\stm32f4xx_hal_gpio.o"
+"esd_final\stm32f4xx_hal_dma_ex.o"
+"esd_final\stm32f4xx_hal_dma.o"
+"esd_final\stm32f4xx_hal_pwr.o"
+"esd_final\stm32f4xx_hal_pwr_ex.o"
+"esd_final\stm32f4xx_hal_cortex.o"
+"esd_final\stm32f4xx_hal.o"
+"esd_final\stm32f4xx_hal_exti.o"
+"esd_final\system_stm32f4xx.o"
+--strict --scatter "ESD_FINAL\ESD_FINAL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ESD_FINAL.map" -o ESD_FINAL\ESD_FINAL.axf
